@@ -1,0 +1,39 @@
+.projectCarusel {
+    .swiper {
+        margin: 20px 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        border-radius: 12px;
+        padding: 30px;
+        height: 160px !important;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        gap: 10px;
+        width: 80%;
+        height: 100px;
+        background-color: #e6e6e6;
+    }
+
+}

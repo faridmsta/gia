@@ -1,0 +1,20 @@
+.highlitedOffers{
+    font-family: var(--font);
+    margin: 40px 0;
+    & .highlitedOffersWrap{
+        & >h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.lastUpdate{
+    font-family: var(--font);
+    margin: 40px 0;
+    & .lastUpdateWrap{
+        & >h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}

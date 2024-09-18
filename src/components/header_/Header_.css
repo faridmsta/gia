@@ -1,0 +1,85 @@
+.landingHeaderWrap {
+    font-family: var(--font);
+    padding: 10px 0;
+
+    & .landingHeader {
+        & .up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 10px;
+
+            & a {
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+
+            & .logo {
+                width: 68px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+
+        & .down {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .menu {
+                & nav {
+                    & ul {
+                        list-style: none;
+                        display: flex;
+                        gap: 20px;
+
+                        & a {
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .authBtns {
+                display: flex;
+                align-items: center;
+                & a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    border-radius: 25px;
+                    outline: none;
+                    padding: 10px;
+                    text-decoration: none;
+                    width: 124px!important;
+                    
+                }
+                
+                & a:first-child {
+                    border: 1px solid black;
+                    background: transparent;
+                    margin-right: 10px;
+                    color: black;
+
+                }
+
+                & a:last-child {
+                    color: white;
+                    background: var(--primary);
+                    border: none;
+
+                }
+            }
+        }
+    }
+}

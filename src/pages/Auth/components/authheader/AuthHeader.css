@@ -1,0 +1,57 @@
+.singinHeaderWrap{
+    font-family: var(--font);
+    & .singinHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .logo {
+            width: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+            }
+        }
+        & nav{
+            & ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                
+                & li{
+                    padding: 15px;
+                    & a{
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        & .buttons{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            & .searhCirc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background: #efefef;
+            }
+            & a{
+                text-decoration: none;
+                border: none;
+                outline: none;
+                background: #000;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+        }
+    }
+}

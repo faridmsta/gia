@@ -1,0 +1,134 @@
+.buildcv {
+    font-family: var(--font);
+
+    & .buildcvWrap {
+        padding: 50px;
+        display: flex;
+        background: var(--primary);
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+
+        & .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            color: white;
+
+            & h2 {
+                font-size: 28px;
+            }
+
+            & p {
+                font-size: 18px;
+            }
+        }
+
+        & right {}
+    }
+}
+
+.projectCarusel {
+    font-family: var(--font);
+}
+
+.userinfo {
+    font-family: var(--font);
+margin: 20px 0;
+    & .userinfoWrap {
+        border-radius: 25px;
+        padding: 30px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F2F2F2;
+        gap: 100px;
+        & .infoPrt {
+            width: 20%;
+        }
+
+        & .imagePrt {
+            width: 12%;
+            display: flex;
+            justify-content: start;
+            
+            & .context{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+            }
+
+            & .image {
+                width: 100%;
+                overflow: hidden;
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    
+                }
+            }
+
+            & a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+
+        & .mainInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & h2{
+                font-size: 32px;
+            }
+            & h3{
+                font-size: 22px;
+            }
+            & p{
+                font-size: 18px;
+            }
+        }
+
+        & .secondaryInfo {
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                & li{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+            }
+        }
+        & .moreBtns{
+            display: flex;
+            flex-direction: column;
+            gap: 20px ;
+            & button{
+                padding: 15px;
+                border-radius: 35px;
+                border: none;
+                outline: none;
+                color: white;
+                font-size: 16px;
+            }
+            & button:first-child{
+                background-color: var(--primary);
+            }
+            & button:last-child{
+                background-color: #74767E;
+            }
+        }
+    }
+}

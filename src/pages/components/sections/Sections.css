@@ -1,0 +1,28 @@
+.sectionsFoot{
+    font-family: var(--font);
+    margin: 50px 0;
+    .sectionsFootWrap{
+        display: flex;
+        justify-content: space-between;
+        & .line{
+            & h2{
+                font-size: 28px;
+                margin-bottom: 20px;
+                color: var(--primary);
+            }
+            & nav{
+                & ul{
+                    list-style: none;
+                    & li{
+                        margin-bottom: 10px;
+                        & a{
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

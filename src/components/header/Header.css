@@ -1,0 +1,55 @@
+.mainHeader {
+    & .mainHeaderWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .logo {
+            width: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & nav {
+            & ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                & li {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 40px;
+                    aspect-ratio: 1/1;
+                    background: #efefef;
+
+                    & a {
+                        color: black;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                & li:last-child {
+                    & a {
+                        & img {
+                            width: 100%;
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

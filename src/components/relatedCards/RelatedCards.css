@@ -1,0 +1,103 @@
+.releatedCards{
+    padding-bottom: 50px;
+    
+    font-family: var(--font);
+    & .releatedCardsWrap{
+        & .heading{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            & h4{
+                font-size: clamp(1rem, 0.5029rem + 1.8713vw, 2rem);
+            }
+            & a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border-radius: 15px;
+                padding: 10px;
+                text-decoration: none;
+                background: #000;
+                color: white;
+                & span{
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                    border-radius: 50%;
+                    padding: 3px;
+                }
+            }
+        }
+        & .categories{
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            margin: 20px 0;
+            & .category{
+
+                padding: 10px;
+                white-space: nowrap;
+                background-color: #f4f6fa;
+                border-radius: 25px;
+                font-weight: bold;
+            }
+        }
+
+        & .categories::-webkit-scrollbar {
+            display: none; /* Hides the scrollbar */
+        }
+
+        & .cards{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            & .card:hover{
+                background-color: #ebeef2;
+
+            }
+            & .card{
+                aspect-ratio: 1;
+                width: 48%;
+                text-decoration: none;
+                color: black;
+                background-color: #f4f6fa;
+                padding: 20px;
+                border-radius: 25px;
+                @media screen and (min-width:768px) {
+                    width: 18%;
+                }
+                & .image{
+                    width: 100%;
+                    margin-bottom: 5%;
+                    & .imageWrap{
+                        overflow: hidden;
+                        width: 60%;
+                        border-radius: 50%;
+                        aspect-ratio: 1;
+
+                        & img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                & h4{
+                    font-size: clamp(1rem, 0.7515rem + 0.9357vw, 1.5rem);
+                    margin-bottom: 5px;
+                }
+                & span{
+                    color: rgba(0, 0, 0, 0.4);
+
+                    font-size: clamp(0.75rem, 0.6257rem + 0.4678vw, 1rem);
+                }
+            }
+        }
+    }
+}

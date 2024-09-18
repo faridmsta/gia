@@ -1,0 +1,102 @@
+.signinsecWrap {
+    margin: 50px 0;
+    font-family: var(--font);
+    & .signinsecAll{
+        height: 78dvh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .signinsec {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+    
+            & .signinsecimg {
+                flex: 2;
+    
+                & img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+    
+            & .formSec {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+    
+                & h2 {
+                    font-weight: normal;
+                }
+    
+                & form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 10px;
+    
+                    & .inpBox {
+                        width: 100%;
+                        padding: 20px;
+                        border: 1px solid black;
+                        border-radius: 35px;
+                        display: flex;
+                        align-items: center;
+    
+                        & input {
+                            width: 100%;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+    
+                    & .feedAndLog {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        & a {
+                            text-decoration: none;
+                            color: black;
+                        }
+    
+                        & button {
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 25px;
+                            background-color: var(--primary);
+                            color: white;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+    
+                        }
+                    }
+    
+                }
+    
+                &>a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 15px;
+                    width: 100%;
+                    border: none;
+                    border-radius: 35px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+    
+                }
+            }
+    
+    
+        }
+    }
+}
